@@ -13,6 +13,7 @@ app.register_blueprint(user_bp, url_prefix='/users')
 
 @app.route('/') # decorator
 def index():  
+    
     return render_template('index.html')
 
 # MVC

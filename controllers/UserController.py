@@ -1,9 +1,6 @@
 from flask import Response, request
-from models.User import User 
-from flask_sqlalchemy import SQLAlchemy
+from models.User import User, db
 import json
-
-db = SQLAlchemy()
 
 def index():
     session = db.session()
